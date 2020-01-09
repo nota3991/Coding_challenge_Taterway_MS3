@@ -29,10 +29,13 @@ Records failed: ####
 
 Use Maven:
 ```
-Go to where the files are stored and run below command in the terminal
+Go to where the files are stored and run below command in the terminal. Do not go to the src file just the Folder where all of the files are
+
+in the command line type
 
 mvn clean && mvn package && mvn exec:java -Dexec.mainClass="Main"
 ```
+Might need to install maven if you don't have it
 
 there are 3 outside dependencies managed by Maven: commons-csv, sqlite-jdbc, ibatis2-common. The last one there provides some convenience methods for running an SQL file as a script. This is used to create the DB table on connection.
 
