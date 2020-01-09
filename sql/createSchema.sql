@@ -1,0 +1,13 @@
+-- create 'csvdata' table if it doesn't already exist
+CREATE TABLE IF NOT EXISTS csvdata (
+   A VARCHAR(50) NOT NULL,
+   B VARCHAR(50) NOT NULL,
+   C VARCHAR(50) NOT NULL,
+   D VARCHAR(50) NOT NULL,
+   E VARCHAR(50) NOT NULL,
+   F VARCHAR(50) NOT NULL,
+   G DECIMAL(10, 2) NOT NULL,
+   H INT(50) NOT NULL,
+   I INT(50) NOT NULL,
+   J VARCHAR(50) NOT NULL
+);
