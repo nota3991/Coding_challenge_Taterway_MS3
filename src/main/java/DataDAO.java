@@ -11,12 +11,13 @@ import java.sql.SQLException;
 import com.ibatis.common.jdbc.ScriptRunner;
 
 public class DataDAO {
-    //constant
+    //constant to store name of sql file that sets up db table
     private static final String CREATE_SQL_FILE_NAME = "sql/createSchema.sql";
 
-    //static
+    //static db Connection object used by this class
     private static Connection dbConn;
 
+    //establishes db connection in static dbConn object
     public static void initDB(String dbName) {
         //--connection
         try {
@@ -62,6 +63,7 @@ public class DataDAO {
     //prevent making instances of this class, use static methods instead
     private DataDAO() {}
 
+    //inserts new Data record into DB as a new row using JDBC
 	public static void create(Data data) {
         //create new
         try {
